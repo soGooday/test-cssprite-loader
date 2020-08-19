@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var docEl = document.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth || 375;
+            clientWidth > 750 ? clientWidth = 750 : clientWidth = clientWidth;
+            if (clientWidth){
+                const fz = docEl.style.fontSize = 20 * (clientWidth / 375);
+                docEl.style.fontSize = 20 * (clientWidth / 375) + 'px';
+                window.remscale = clientWidth / 375;
+                var realfz = ~~(+window.getComputedStyle(document.getElementsByTagName("html")[0]).fontSize.replace('px','')*10000)/10000
+                if (fz !== realfz) {
+                    document.getElementsByTagName("html")[0].style.cssText = 'font-size: ' + fz * (fz / realfz) +"px";
+                }
+            }
+        };
+        if (document.addEventListener){
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        }
+    </script>
+</head>
+<body>
+    <div class="btn-1"></div>
+    <div class="btn-2"></div>
+    <div class="btn-3"></div>
+    <div class="btn-4"></div>
+    <div class="icon-1"></div>
+    <div class="icon-2"></div>
+    <div class="icon-3"></div>
+    <div class="icon-4"></div>
+</body>
+</html>
