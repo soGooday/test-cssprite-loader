@@ -13,8 +13,7 @@ module.exports = {
         rules:[
             {
                 test:/.css$/i,
-                use:[
-                    
+                use:[ 
                     MiniCssExtractPlugin.loader,//使用插件开始进行设置分离
                     // path.resolve('./loader/index'),  
                     'css-loader', 

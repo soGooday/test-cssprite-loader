@@ -44,25 +44,25 @@ body{
 }
 .icon-1{
     @include aWH(161,161);
-    background: url(./images//icon1.png?sp_2);
+    background: url(./images//icon1.png?sp_3);
     background-repeat: no-repeat;
     background-size:cover;  
 }
 .icon-2{
     @include aWH(161,161);
-    background: url(./images//icon2.png);
+    background: url(./images//icon2.png?sp_3);
     background-repeat: no-repeat;
     background-size:cover;  
 }
 .icon-3{
     @include aWH(161,161);
-    background: url(./images//icon3.png);
+    background: url(./images//icon3.png?sp_3);
     background-repeat: no-repeat;
     background-size:cover;  
 }
 .icon-4{
     @include aWH(161,161);
-    background: url(./images//icon4.png);
+    background: url(./images//icon4.png?sp_3);
     background-repeat: no-repeat;
     background-size:cover;  
 }
