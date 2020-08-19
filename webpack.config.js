@@ -1,14 +1,15 @@
 const path = require('path')
 const webpack = require('webpack'); 
 const  HtmlWebpackPlugin =  require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+console.log('process.env.NODE_ENV:',process.env.NODE_ENV)
 module.exports = {
     entry:'./src/index.js',
     output:{
         filename:'index.js',
         path:path.resolve(__dirname,'dist'),
     },
-    mode:'development',
+    // mode:process.env.NODE_ENV,
     module:{
         rules:[
             {

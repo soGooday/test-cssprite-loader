@@ -20,7 +20,7 @@ body{
 }
 .btn-1{
    @include aWH(124,60);
-    background: url(./images//button1.png?sp_1);
+    background: url(./images//button1.png);
     background-repeat: no-repeat;
     background-size:cover;  
 }
