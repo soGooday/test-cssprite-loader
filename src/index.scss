@@ -20,7 +20,7 @@ body{
 }
 .btn-1{
    @include aWH(124,60);
-    background: url(./images//button1.png);
+    background: url(./images//button1.png?sp_1);
     background-repeat: no-repeat;
     background-size:cover;  
 }
@@ -63,6 +63,30 @@ body{
 .icon-4{
     @include aWH(161,161);
     background: url(./images//icon4.png?sp_3);
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+.icon-11{
+    @include aWH(161,161);
+    background: url(./images//icon11.jpg?sp_4);
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+.icon-22{
+    @include aWH(161,161);
+    background: url(./images//icon22.jpg?sp_4);
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+.icon-33{
+    @include aWH(161,161);
+    background: url(./images//icon33.jpg?sp_4);
+    background-repeat: no-repeat;
+    background-size:cover;  
+}
+.icon-44{
+    @include aWH(161,161);
+    background: url(./images//icon44.jpg?sp_4);
     background-repeat: no-repeat;
     background-size:cover;  
 }
