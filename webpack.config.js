@@ -27,6 +27,7 @@ module.exports = {
                             imgType: ['png', 'jpg', 'jpeg'],//能够打成雪碧图的素材类型 直接使用作为正则的匹配
                             htmlFontSize:20,//html的font-size值是多少  用于rem的适配
                             imageRatio:2,//使用的是几倍图的素材
+                            defaultType:'png',//不同中类型图片被打包成为同一张雪碧图,此时雪碧图的类型。建议png
                         }
                     },
                     'sass-loader'
@@ -39,7 +40,7 @@ module.exports = {
                     options:{
                         limit:1,  //设置小于10Kb的图片转化为base64输出 不在使用image
                         outputPath:'images',//打包后存放的文件夹的位置
-                        name:'[name][hash:8].[ext]'//[name]=名字 [ext]=后缀
+                        name:'[name].[hash:8].[ext]'//[name]=名字 [ext]=后缀
                     }
                 }
             }   
