@@ -1,6 +1,7 @@
 
 //test-text
-module.exports = function (source) {     
+module.exports = function (source) {  
+    console.log('source:',source)   
     return source 
 }
 

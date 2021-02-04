@@ -1,20 +1,5 @@
-@function rem($px) {
-    @return $px/40;
-}
-
-@function ax($px) {
-    @if type-of($px)==number {
-        @return $px/40+rem;
-    }
-    @else {
-        @return $px;
-    }
-}
-@mixin aWH($width:auto, $height:auto) {
-    width:ax($width);
-    height:ax($height);
-    
-} 
+@import "@/style/index.scss"; 
+ 
 body{
     background-color: bisque;
 }

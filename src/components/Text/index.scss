@@ -1,0 +1,15 @@
+@import "@/style/index.scss"; 
+#text-box{
+    .hammer{
+        @include aWH(102,117);
+        background: url(./images//hammer.png);
+        background-repeat: no-repeat;
+        background-size:cover;  
+    }
+    .hand{
+        @include aWH(74,80);
+        background: url(./images//hand.png);
+        background-repeat: no-repeat;
+        background-size:cover;  
+    }
+}
